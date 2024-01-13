@@ -1,0 +1,112 @@
+/* Worksans fonts from google */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;600;700;800&display=swap');
+
+
+*{
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* header styles */
+
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding:50px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right:30px;
+    font-weight: 500;
+    font-size:1rem;
+
+}
+
+nav li a{
+    text-decoration: none;
+    color: Rgb(66, 66, 66, 1);
+}
+
+.nav-title{
+    color: var(--Dark-01, #131313);
+        /* font-family: Work Sans; */
+        font-size: 2.8rem; 
+        /* Normal font size 16 */
+        /* font-style: normal; */
+        font-weight: 700;
+        /* line-height: normal; */
+}
+.banner-content{
+    max-width: 800px;
+    text-align: center;
+    margin:0 auto;
+}
+
+.banner img{
+    width:100%;
+}
+.banner-content>h1{
+    color: var(--Dark-01, #131313);
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 20px;
+}
+.paragraph{
+    color: var(--Dark-03, #727272);
+        text-align: center;
+        font-family: Work Sans;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 26px;
+        margin-bottom: 50px;
+        /* 162.5% */
+}
+
+.btn-primary{
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 20px 25px;
+    outline: none;
+    color: #FFF;
+    text-align: center;
+    font-family: Work Sans;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    margin: 50px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:576px){
+    header{
+    padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    
+}
+/* tablet or medium devices */
+
+@media screen and (min-width:576px) and (max-width:962px){
+    nav{
+        padding: 50px;
+        flex-direction: column;
+    }
+
+}
+    
+
+
+
